@@ -25,6 +25,20 @@ main{
     border: 2px solid black;
     min-width: 35vw;
     max-width: 35vw;
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 60vh;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer{
+    min-width: 100%;
+    min-height: 15vh;
+    background-color: gray;
+    color: black;
+}
+
+.numPad{
+    background-color: green;
+    min-height: 45vh;
 }
