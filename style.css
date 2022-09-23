@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    min-height: 90vh;
+}
+
+.calc{
+    background-color: red;
+    border: 2px solid black;
+    min-width: 35vw;
+    max-width: 35vw;
+    min-height: 80vh;
+    max-height: 80vh;
+}
