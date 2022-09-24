@@ -6,8 +6,19 @@ let str = "";
 btns.forEach(btn=>{
     btn.addEventListener("click", ()=>{
         if(btn.value == "="){
+            if(str.includes("x")){
+                str = str.replace("x","*");
+            }
+            if(str.includes("√")){
+                str = str.replace("√","math.sqrt(");
+                str+=")";
+            }
+            if(str.includes("^")){
+                str = str.replace("^","**");
+            }
             str = eval(str);
             document.querySelector("#ans").innerHTML = str;
+            
         }
         else if(btn.value == "ac"){
             str = "";
