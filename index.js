@@ -1,5 +1,3 @@
-
-
 btns = document.querySelectorAll(".btn");
 let str = "";
 
