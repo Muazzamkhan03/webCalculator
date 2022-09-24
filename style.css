@@ -48,6 +48,7 @@ main{
 
 #ans{
     position: absolute;
+    display: block;
     bottom: 1vw;
     right: 1vw;
 }
