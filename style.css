@@ -62,7 +62,7 @@ main{
     align-content: center;
     justify-content: center;
     grid-template-columns: repeat(5,20%);
-    grid-template-rows: repeat(5,20%);
+    grid-template-rows: repeat(4,25%);
 }
 
 .btn{
@@ -70,7 +70,9 @@ main{
     color: white;
     font-size: 2vw;
 }
-
+.blue{
+    background-color: blue;
+}
 .btn:hover{
     cursor: pointer;
     transform: scale(1.01,1.01);
