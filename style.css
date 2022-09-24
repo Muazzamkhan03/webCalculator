@@ -69,3 +69,8 @@ main{
     color: white;
     font-size: 2vw;
 }
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.01,1.01);
+}
