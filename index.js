@@ -16,6 +16,9 @@ btns.forEach(btn=>{
             if(str.includes("^")){
                 str = str.replace("^","**");
             }
+            if(str.includes("÷")){
+                str = str.replace("÷","/");
+            }
             str = eval(str);
             document.querySelector("#ans").innerHTML = str;
             
