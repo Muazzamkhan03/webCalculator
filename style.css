@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+header{
+    min-width: 100vw;
+}
+
 nav{
     min-height: 10vh;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +21,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 90vh;
 }
 
 .calc{
     background-color: red;
-    border: 2px solid black;
     min-width: 35vw;
     max-width: 35vw;
     min-height: 60vh;
@@ -36,9 +40,32 @@ main{
     min-height: 15vh;
     background-color: gray;
     color: black;
+    border: 3px solid black;
+    box-sizing: border-box;
+    font-size: 4vw;
+    position: relative;
+}
+
+#ans{
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
 }
 
 .numPad{
     background-color: green;
+    border: 2px solid red;
+    box-sizing: border-box;
     min-height: 45vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(4,25%);
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    font-size: 2vw;
 }
