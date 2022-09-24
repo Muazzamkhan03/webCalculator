@@ -1,15 +1,19 @@
 
 
 btns = document.querySelectorAll(".btn");
-let str;
+let str = "";
+
 btns.forEach(btn=>{
     btn.addEventListener("click", ()=>{
-        if(document.querySelector("#ans").innerHTML==="0"){
-            str= btn.value;
+        if(btn.value == "="){
+            str = eval(str);
+            document.querySelector("#ans").innerHTML = str;
+        }
+        else if(btn.value == "ac"){
+            str = "";
             document.querySelector("#ans").innerHTML = str;
         }
         else{
-            str = document.querySelector("#ans").innerHTML;
             str+= btn.value;
             document.querySelector("#ans").innerHTML = str;
         }
