@@ -1,3 +1,5 @@
+const math = Math();
+
 btns = document.querySelectorAll(".btn");
 let str = "";
 
@@ -24,7 +26,6 @@ btns.forEach(btn=>{
                     document.querySelector("#ans").innerHTML = newStr;
                 }
             }
-
         }
         else{
             str+= btn.value;
