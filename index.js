@@ -1,4 +1,4 @@
-const math = Math();
+const math = Math;
 
 btns = document.querySelectorAll(".btn");
 let str = "";
